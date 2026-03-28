@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* background image layer */
+body::before{
+    
+    content: "";
+    position: fixed      ;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("images/image1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: 2s;
+}
+
+/* hover panna blur */
+body:hover::before{
+    filter: blur(0.3rem);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;   
+    
+}  
+/* header */  
+header{
+    display: flex;
+    background-color: rgb(7, 7, 7);
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+    top: 0;
+    position: sticky;
+    
+    
+}
+header h2{
+    color: aqua;
+    cursor: pointer;
+    
+
+}
+header h2:hover{
+    color: rgb(216, 238, 14)
+    
+}
+header .nav {
+    padding-top: 0.5rem;
+    
+}
+
+header .nav a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: darkseagreen;
+    transition: all 1s ease;
+    
+}
+header .nav a:hover{
+     color: blueviolet;
+     border:2px dotted red ;
+     border-radius: 3px;
+     background-color: rgb(17, 16, 17);
+}
+/* header */  
+/* main */
+.main{
+    margin-top: 5rem;
+    text-align: center;
+    color:magenta;
+     text-shadow:3px 3px 3px black;
+}
+/* .main:hover{
+    text-shadow:3px 3px 3px black;
+} */
+.button{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+nav button{
+
+    color: blueviolet;
+    background-color: rgb(215, 244, 108);
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+
+.card{
+   
+    margin-top: 4rem;
+    
+}
+div .s1{
+     border: 2px solid rgb(9, 25, 201);
+     margin: 2rem;
+     background-color: black;
+     border-radius: 6px;
+
+     
+     
+}
+
+div .s1 button:hover{
+
+    cursor: pointer;
+
+}
+
+.explore{
+     margin-left: 3rem; 
+
+}
+.explore section{
+  display: flex;
+  justify-content: center;
+  gap:20px 
+}
+
+.explore button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  background-color:rgb(234, 234, 70); 
+  color: crimson;
+
+}
+.explore button:hover{
+    background-color: black;
+}
+
+.homegallery{
+    padding: 40px;
+    margin-top:200px ;
+}
+
+.imggall{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px ;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.imggall img{
+    width: 21rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.imggall img:hover{
+
+    transform: scale(1.05);
+    transition: 0.50s ;
+
+}
+
+
+
+
+
+
+
+     
+
+
+
+
+
